@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/christopheralba/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/christopheralba/static/js/main.c35cc7a6.chunk.js",
+    "main.js.map": "/christopheralba/static/js/main.c35cc7a6.chunk.js.map",
+    "runtime-main.js": "/christopheralba/static/js/runtime-main.e299c590.js",
+    "runtime-main.js.map": "/christopheralba/static/js/runtime-main.e299c590.js.map",
+    "static/js/2.af9ee3e1.chunk.js": "/christopheralba/static/js/2.af9ee3e1.chunk.js",
+    "static/js/2.af9ee3e1.chunk.js.map": "/christopheralba/static/js/2.af9ee3e1.chunk.js.map",
+    "static/js/3.13ba9e07.chunk.js": "/christopheralba/static/js/3.13ba9e07.chunk.js",
+    "static/js/3.13ba9e07.chunk.js.map": "/christopheralba/static/js/3.13ba9e07.chunk.js.map",
+    "index.html": "/christopheralba/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/christopheralba/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.af9ee3e1.chunk.js.LICENSE.txt": "/christopheralba/static/js/2.af9ee3e1.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/christopheralba/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e299c590.js",
+    "static/js/2.af9ee3e1.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.c35cc7a6.chunk.js"
+  ]
+}
