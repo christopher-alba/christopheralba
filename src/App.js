@@ -6,8 +6,8 @@ import Portfolio from './Pages/Portfolio';
 const App = () => {
   return (
     <Fragment>
-      <Route exact path="/christopheralba" component={Homepage} />
-      <Route exact path="/christopheralba/portfolio" component={Portfolio} />
+      <Route exact path="/" component={Homepage} />
+      <Route exact path="/portfolio" component={Portfolio} />
     </Fragment>
   );
 };
