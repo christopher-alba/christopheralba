@@ -1,0 +1,48 @@
+.landing-hero-image {
+  background: url('http://www.arup.cc/-/media/arup/images/projects/c/central-interceptor-auckland/Auckland%20cityscape_22000x11256ee1.jpg?h=1125&w=2000&hash=3B163A734999ADA6F969C6D615F200B6');
+  height: 85vh;
+  min-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.landing-hero-text {
+    background: rgba(0, 0, 0, 0.563);
+    color: white;
+    width: 63%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-button-light:first-of-type {
+    margin-right:10px;
+}
+
+.landing-button-light {
+    width: 200px;
+}
+.landing-button-info {
+    width:100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px){
+    .landing-hero-text{
+        width:100%;
+    }
+}
+
+@media (max-width: 460px){
+    .landing-hero-text{
+        padding:20px;
+    }
+    .landing-button-light{
+        width:100%;
+    }
+    .landing-button-light:last-of-type{
+        margin-top:10px;
+    }
+}
