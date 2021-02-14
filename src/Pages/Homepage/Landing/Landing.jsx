@@ -14,7 +14,7 @@ const Landing = () => {
           </ul>
           <div>
             <Button className="landing-button-light" variant="light" href="https://docs.google.com/document/d/16pRyFT4RnE5ICkokCWPxguS-Z14z-i5bxwUf2Sz1doE/edit?usp=sharing"  target="_blank">VIEW MY CV</Button>
-            <Button className="landing-button-light" variant="light" href="christopheralba/#/portfolio">VIEW MY PORTFOLIO</Button>
+            <Button className="landing-button-light" variant="light" href="/portfolio">VIEW MY PORTFOLIO</Button>
           </div>
           <Button className="landing-button-info" variant="info">LEARN MORE ABOUT ME</Button>
         </div>

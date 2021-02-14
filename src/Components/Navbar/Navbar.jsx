@@ -18,12 +18,12 @@ const NavbarMain = (props) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className={`${location === '/' ? 'active' : ''} nav-link-home`} href="/christopheralba/#/">
+            <Nav.Link className={`${location === '/' ? 'active' : ''} nav-link-home`} href="/">
               Home
             </Nav.Link>
             <Nav.Link
               className={location === '/portfolio' ? 'active' : ''}
-              href="/christopheralba/#/portfolio"
+              href="/portfolio"
             >
               Portfolio
             </Nav.Link>
