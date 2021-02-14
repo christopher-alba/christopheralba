@@ -1,0 +1,13 @@
+.active {
+  color: white;
+}
+
+.nav-link-home {
+  margin-right: 25px;
+}
+
+.navbar-main {
+    background: black !important;
+    position: sticky;
+    top: 0px;
+}
