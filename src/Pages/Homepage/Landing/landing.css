@@ -27,8 +27,13 @@
 .landing-button-info {
     width:100%;
     margin-top: 10px;
+    background: #0131B5;
+    border: #0131B5;
 }
 
+.sub-header-compsys {
+    margin-bottom: 20px;
+}
 @media (max-width: 1000px){
     .landing-hero-text{
         width:100%;
