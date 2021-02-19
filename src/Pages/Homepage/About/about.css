@@ -1,0 +1,33 @@
+.about-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.about-txt-div {
+  max-width: 50%;
+}
+
+.about-img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.about-header {
+  color: #0131b5;
+}
+
+@media (max-width: 800px) {
+    .about-div{
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    .about-txt-div{
+        max-width: 100%;
+    }
+    .about-img{
+        width:250px;
+        height:250px;
+    }
+}

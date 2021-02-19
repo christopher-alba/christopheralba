@@ -1,8 +1,14 @@
-import React from 'react';
-import Landing from './Landing';
+import React, { Fragment } from "react";
+import About from "./About/About";
+import Landing from "./Landing";
 
 const Homepage = () => {
-  return <Landing />;
+  return (
+    <Fragment>
+      <Landing />
+      <About />
+    </Fragment>
+  );
 };
 
 export default Homepage;
