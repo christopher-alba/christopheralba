@@ -1,0 +1,30 @@
+.web-developer-div {
+  background: #ececec;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.web-developer-header {
+  color: #0131b5;
+}
+
+.web-developer-image {
+  height: 200px;
+  width: auto;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+.web-developer-images-div {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+@media (max-width: 550px){
+    .web-developer-image{
+        height:150px;
+    }
+    .web-developer-image:nth-of-type(2){
+        width:0px;
+    }
+}
