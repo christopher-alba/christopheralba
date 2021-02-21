@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/christopheralba/static/css/main.4386af74.chunk.css",
-    "main.js": "/christopheralba/static/js/main.9920fbf8.chunk.js",
-    "main.js.map": "/christopheralba/static/js/main.9920fbf8.chunk.js.map",
+    "main.css": "/christopheralba/static/css/main.3ecce850.chunk.css",
+    "main.js": "/christopheralba/static/js/main.8a90f2b7.chunk.js",
+    "main.js.map": "/christopheralba/static/js/main.8a90f2b7.chunk.js.map",
     "runtime-main.js": "/christopheralba/static/js/runtime-main.1ffc6957.js",
     "runtime-main.js.map": "/christopheralba/static/js/runtime-main.1ffc6957.js.map",
     "static/js/2.4b2719bf.chunk.js": "/christopheralba/static/js/2.4b2719bf.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.67b4bb46.chunk.js": "/christopheralba/static/js/3.67b4bb46.chunk.js",
     "static/js/3.67b4bb46.chunk.js.map": "/christopheralba/static/js/3.67b4bb46.chunk.js.map",
     "index.html": "/christopheralba/index.html",
-    "static/css/main.4386af74.chunk.css.map": "/christopheralba/static/css/main.4386af74.chunk.css.map",
+    "static/css/main.3ecce850.chunk.css.map": "/christopheralba/static/css/main.3ecce850.chunk.css.map",
     "static/js/2.4b2719bf.chunk.js.LICENSE.txt": "/christopheralba/static/js/2.4b2719bf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1ffc6957.js",
     "static/js/2.4b2719bf.chunk.js",
-    "static/css/main.4386af74.chunk.css",
-    "static/js/main.9920fbf8.chunk.js"
+    "static/css/main.3ecce850.chunk.css",
+    "static/js/main.8a90f2b7.chunk.js"
   ]
 }
