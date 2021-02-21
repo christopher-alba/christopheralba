@@ -23,7 +23,7 @@ const NavbarMain = (props) => {
             </Nav.Link>
             <Nav.Link
               className={location === '/portfolio' ? 'active' : ''}
-              href="/christopheralba/#/portfolio"
+              href="portfolio"
             >
               Portfolio
             </Nav.Link>

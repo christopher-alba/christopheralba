@@ -26,7 +26,7 @@ const Landing = () => {
             <Button
               className="landing-button-light"
               variant="light"
-              href="christopheralba/#/portfolio"
+              href="portfolio"
             >
               VIEW MY PORTFOLIO
             </Button>
