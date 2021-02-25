@@ -3,7 +3,10 @@ import Button from "react-bootstrap/Button";
 import "./landing.css";
 const Landing = () => {
   return (
-    <div className="landing-hero-image" style={{background:`url("./auckland.jpg")`}}>
+    <div
+      className="landing-hero-image"
+      style={{ background: `url("./auckland.jpg")` }}
+    >
       <div className="landing-hero-text">
         <div>
           <h1>Christopher Sy Alba</h1>
@@ -31,7 +34,12 @@ const Landing = () => {
               VIEW MY PORTFOLIO
             </Button>
           </div>
-          <Button className="landing-button-info">
+          <Button
+            className="landing-button-info"
+            onClick={() => {
+              document.getElementsByClassName("about-div")[0].scrollIntoView();
+            }}
+          >
             LEARN MORE ABOUT ME
           </Button>
         </div>
