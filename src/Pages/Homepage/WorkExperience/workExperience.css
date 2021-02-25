@@ -1,0 +1,32 @@
+.work-experience-div {
+  background: #ececec;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.work-experience-header {
+  color: #0131b5;
+  margin-bottom: 100px;
+}
+
+.work-experience-item {
+  margin-bottom: 100px;
+}
+.work-experience-item:last-of-type {
+    margin-bottom: 0px;
+}
+.work-experience-img {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .work-experience-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .work-experience-img {
+      margin-top:100px;
+      margin-bottom:100px;
+  }
+}
