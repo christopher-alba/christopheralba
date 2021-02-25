@@ -17,7 +17,7 @@ const Landing = () => {
             <Button
               className="landing-button-light"
               variant="light"
-              href="https://docs.google.com/document/d/16pRyFT4RnE5ICkokCWPxguS-Z14z-i5bxwUf2Sz1doE/edit?usp=sharing"
+              href="./cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
