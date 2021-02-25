@@ -1,10 +1,12 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-
+import { useLocation } from "react-router-dom";
 import "./landing.css";
 const Landing = () => {
+  const location = useLocation()
+  console.log(location);
   return (
-    <div className="landing-hero-image">
+    <div className="landing-hero-image" style={{background:`url("./auckland.jpg")`}}>
       <div className="landing-hero-text">
         <div>
           <h1>Christopher Sy Alba</h1>
