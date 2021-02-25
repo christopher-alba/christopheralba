@@ -1,10 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import { useLocation } from "react-router-dom";
 import "./landing.css";
 const Landing = () => {
-  const location = useLocation()
-  console.log(location);
   return (
     <div className="landing-hero-image" style={{background:`url("./auckland.jpg")`}}>
       <div className="landing-hero-text">
@@ -22,6 +19,7 @@ const Landing = () => {
               variant="light"
               href="https://docs.google.com/document/d/16pRyFT4RnE5ICkokCWPxguS-Z14z-i5bxwUf2Sz1doE/edit?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
             >
               VIEW MY CV
             </Button>
