@@ -5,6 +5,10 @@ import Homepage from "./Pages/Homepage";
 import Portfolio from "./Pages/Portfolio";
 import NavbarMain from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 const App = () => {
   return (
     <Fragment>

@@ -5,7 +5,7 @@ import "./about.css";
 const About = () => {
   return (
     <Container className="about-div">
-      <div className="about-txt-div">
+      <div className="about-txt-div" data-aos="fade-up">
         <h1 className="about-header">ABOUT ME</h1>
         <p>
           <strong>Hey there!</strong> I'm Christopher, a person who loves
@@ -25,7 +25,7 @@ const About = () => {
           </em>
         </p>
       </div>
-      <img src="./profileImage.png" alt="profile" className="about-img" />
+      <img data-aos="fade-in" src="./profileImage.png" alt="profile" className="about-img" />
     </Container>
   );
 };

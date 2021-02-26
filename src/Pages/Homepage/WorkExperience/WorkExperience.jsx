@@ -6,19 +6,19 @@ const WorkExperience = () => {
   return (
     <div className="work-experience-div">
       <Container>
-        <h1 className="work-experience-header">MY WORK EXPERIENCE</h1>
+        <h1 className="work-experience-header" data-aos="fade-up">MY WORK EXPERIENCE</h1>
         <div className="work-experience-item">
           <Row>
             <Col md={4}></Col>
             <Col md={8}>
-              <h2>SOFTWARE ENGINEER INTERN AT JASPER</h2>
+              <h2 data-aos="fade-up">SOFTWARE ENGINEER INTERN AT JASPER</h2>
             </Col>
           </Row>
           <Row>
             <Col md={4} className="work-experience-img-container">
-              <img className="work-experience-img" src="./jasper.png" alt="" />
+              <img data-aos="fade-up" className="work-experience-img" src="./jasper.png" alt="" />
             </Col>
-            <Col md={8}>
+            <Col md={8} data-aos="fade-up">
               <p>
                 Jasper is a company who makes investing in commercial real
                 estate more accessible to the public. During my time at Jasper,
@@ -57,14 +57,14 @@ const WorkExperience = () => {
           <Row>
             <Col md={4}></Col>
             <Col md={8}>
-              <h2>FULL STACK WEB DEVELOPER AT ENSPIRAL DEV ACADEMY</h2>
+              <h2 data-aos="fade-up">FULL STACK WEB DEVELOPER AT ENSPIRAL DEV ACADEMY</h2>
             </Col>
           </Row>
           <Row>
             <Col md={4} className="work-experience-img-container">
-              <img className="work-experience-img" src="./eda.png" alt="" />
+              <img data-aos="fade-up" className="work-experience-img" src="./eda.png" alt="" />
             </Col>
-            <Col md={8}>
+            <Col md={8} data-aos="fade-up">
               <p>
                 EDA’s curriculum is designed and taught by currently employed
                 software developers and was designed to turn someone from no

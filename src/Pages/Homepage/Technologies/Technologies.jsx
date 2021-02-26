@@ -17,7 +17,7 @@ const Technologies = () => {
     >
       <div className="technologies-text-div">
         <Container className="technologies-container">
-          <h1 className="technologies-header">My Technologies</h1>
+          <h1 data-aos="fade-up" className="technologies-header">My Technologies</h1>
           <div className="technologies-list">
             {technologiesData.map((technology) => {
               return (
@@ -27,11 +27,11 @@ const Technologies = () => {
                       from={{ number: 0}}
                       to={{ number: isVisible ? technology.proficiency : 0 }}
                       config={{
-                        duration: 2000 * (technology.proficiency / 100),
+                        duration: 1000 * (technology.proficiency / 100),
                       }}
                     >
                       {(props) => (
-                        <div className="technologies-technology-div">
+                        <div className="technologies-technology-div" data-aos="fade-up">
                           <div className="technologies-technology-div-inner">
                             <div className="technologies-technology-name">
                               <h2>{technology.name}</h2>
