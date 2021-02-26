@@ -4,6 +4,7 @@ import Engineering from "./Engineering";
 import Landing from "./Landing";
 import WebDeveloper from "./WebDeveloper";
 import WorkExperience from "./WorkExperience";
+import Technologies from "./Technologies";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <WebDeveloper />
       <Engineering />
       <WorkExperience />
+      <Technologies />
     </Fragment>
   );
 };
