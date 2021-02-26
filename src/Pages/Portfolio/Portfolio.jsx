@@ -10,14 +10,14 @@ const Portfolio = () => {
         {projects.map((project) => (
           <div className="portfolio-project-div">
             <img src={project.imgUrl} alt="" />
-            <Button className="visit" href={project.href} variant="dark">
+            <Button className="portfolio-visit" href={project.href} variant="dark">
               Visit
             </Button>
             <h4>{project.title}</h4>
             <p>{project.description}</p>
-            <div className="hashtags">
+            <div className="portfolio-hashtags">
               {project.tags.map((tag) => (
-                <div className="hashtag">
+                <div className="portfolio-hashtag">
                   <strong>#{tag}</strong>
                 </div>
               ))}

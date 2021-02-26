@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./technologies.css";
+import technologies from "./technologies";
 
 const Technologies = () => {
   return (
@@ -15,30 +16,33 @@ const Technologies = () => {
       <div className="technologies-text-div">
         <Container className="technologies-container">
           <h1 className="technologies-header">My Technologies</h1>
-          <ul className="technologies-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>React.js</li>
-            <li>Apollo</li>
-            <li>jQuery</li>
-            <li>GraphQL</li>
-            <li>Node.js + Express.js</li>
-            <li>Jest</li>
-            <li>Cypress</li>
-            <li>Supertest</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>C</li>
-            <li>MATLAB</li>
-            <li>R</li>
-            <li>Postman</li>
-            <li>MongoDB</li>
-            <li>Knex.js</li>
-            <li>Adobe XD</li>
-            <li>Photoshop</li>
-            <li>Microcontrollers</li>
-          </ul>
+          <div className="technologies-list">
+            {technologies.map((technology) => {
+              return (
+                <div className="technologies-technology-div">
+                  <div className="technologies-technology-div-inner">
+                    <div className="technologies-technology-name">
+                      <h2>{technology.name}</h2>
+                    </div>
+                    <div style={{width:"100%"}}>
+                      <div className="technologies-proficiency-bar">
+                        <p className="technologies-proficiency-text">
+                          {technology.proficiency}%
+                        </p>
+                        <div
+                          className="technologies-proficiency-bar-inner"
+                          style={{ width: `${technology.proficiency}%` }}
+                        ></div>
+                      </div>
+                      {technology.learnedFrom.map((source) => (
+                        <strong className="technologies-source">#{source}</strong>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </Container>
       </div>
     </div>

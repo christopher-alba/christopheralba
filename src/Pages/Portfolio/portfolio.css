@@ -1,0 +1,45 @@
+.portfolio-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-project-div img {
+  max-width: 100%;
+}
+.portfolio-project-div {
+  width: 322px;
+  margin: 20px;
+  position:relative;
+}
+
+.portfolio-hashtags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-hashtag {
+  margin-right: 10px;
+}
+
+.portfolio-visit {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 0px;
+  border-color: lightgray;
+  background-color: rgba(27, 27, 27, 0);
+  width: 100%;
+  height: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+  opacity: 0;
+}
+.portfolio-visit:hover {
+  background-color: rgba(27, 27, 27, 0.445);
+  font-size: 3rem;
+  transition: 500ms;
+  opacity: 1;
+}

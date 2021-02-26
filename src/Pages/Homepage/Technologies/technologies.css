@@ -3,7 +3,6 @@
   background-position: 100px 5px;
   background-size: cover;
   min-height: 100vh;
-  height: 100vh;
 }
 
 .technologies-header {
@@ -21,10 +20,44 @@
 
 .technologies-list {
   color: white;
-  padding-left: 20px;
   padding-top: 100px;
 }
 
+.technologies-technology-div {
+  padding:50px;
+  padding-left:0px;
+}
+.technologies-technology-div-inner {
+  display:flex;
+}
+.technologies-technology-name {
+  width: 300px;
+}
+.technologies-proficiency-bar{
+  height: 30px;
+  width: 100%;
+  background:black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 3px solid black;
+}
+.technologies-proficiency-bar-inner {
+  background: #0131b5;
+  height:100%;
+  position: absolute;
+  top:0px;
+}
+.technologies-proficiency-text {
+  z-index:1;
+  position:relative;
+  text-align: center;
+  margin-bottom:0px;
+  width:100%;
+}
+.technologies-source {
+  margin-right:10px;
+}
 @media (max-width: 1000px) {
   .technologies-text-div {
     background: #00000090;
