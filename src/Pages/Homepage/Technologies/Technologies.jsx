@@ -29,6 +29,7 @@ const Technologies = () => {
             <li>Supertest</li>
             <li>C++</li>
             <li>C#</li>
+            <li>C</li>
             <li>MATLAB</li>
             <li>R</li>
             <li>Postman</li>
