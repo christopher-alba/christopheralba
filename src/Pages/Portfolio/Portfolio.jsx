@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import projects from "./projects";
 import "./portfolio.css";
+
 const Portfolio = () => {
   useEffect(() => {
     document.body.scrollTop = 0; // For Safari
