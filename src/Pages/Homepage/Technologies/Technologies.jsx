@@ -1,7 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./technologies.css";
-import technologies from "./technologies";
+import technologiesData from "./technologiesData";
+import { Spring } from "react-spring/renderprops";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Technologies = () => {
   return (
@@ -17,29 +19,45 @@ const Technologies = () => {
         <Container className="technologies-container">
           <h1 className="technologies-header">My Technologies</h1>
           <div className="technologies-list">
-            {technologies.map((technology) => {
+            {technologiesData.map((technology) => {
               return (
-                <div className="technologies-technology-div">
-                  <div className="technologies-technology-div-inner">
-                    <div className="technologies-technology-name">
-                      <h2>{technology.name}</h2>
-                    </div>
-                    <div style={{width:"100%"}}>
-                      <div className="technologies-proficiency-bar">
-                        <p className="technologies-proficiency-text">
-                          {technology.proficiency}%
-                        </p>
-                        <div
-                          className="technologies-proficiency-bar-inner"
-                          style={{ width: `${technology.proficiency}%` }}
-                        ></div>
-                      </div>
-                      {technology.learnedFrom.map((source) => (
-                        <strong className="technologies-source">#{source}</strong>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                <VisibilitySensor>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ number: 0}}
+                      to={{ number: isVisible ? technology.proficiency : 0 }}
+                      config={{
+                        duration: 2000 * (technology.proficiency / 100),
+                      }}
+                    >
+                      {(props) => (
+                        <div className="technologies-technology-div">
+                          <div className="technologies-technology-div-inner">
+                            <div className="technologies-technology-name">
+                              <h2>{technology.name}</h2>
+                            </div>
+                            <div style={{ width: "100%" }}>
+                              <div className="technologies-proficiency-bar">
+                                <p className="technologies-proficiency-text">
+                                  {Math.round(props.number)}%
+                                </p>
+                                <div
+                                  className="technologies-proficiency-bar-inner"
+                                  style={{ width: `${props.number}%` }}
+                                ></div>
+                              </div>
+                              {technology.learnedFrom.map((source) => (
+                                <strong className="technologies-source">
+                                  #{source}
+                                </strong>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
               );
             })}
           </div>
