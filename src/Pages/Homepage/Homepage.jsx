@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import About from "./About";
 import Engineering from "./Engineering";
 import Landing from "./Landing";
@@ -7,6 +7,10 @@ import WorkExperience from "./WorkExperience";
 import Technologies from "./Technologies";
 
 const Homepage = () => {
+  useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  });
   return (
     <Fragment>
       <Landing />

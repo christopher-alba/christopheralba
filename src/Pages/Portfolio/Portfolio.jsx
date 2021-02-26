@@ -1,16 +1,24 @@
 import { Button } from "react-bootstrap";
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import projects from "./projects";
-import "./portfolio.css"
+import "./portfolio.css";
 const Portfolio = () => {
+  useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  });
   return (
     <Container>
       <div className="portfolio-div">
         {projects.map((project) => (
           <div className="portfolio-project-div">
             <img src={project.imgUrl} alt="" />
-            <Button className="portfolio-visit" href={project.href} variant="dark">
+            <Button
+              className="portfolio-visit"
+              href={project.href}
+              variant="dark"
+            >
               Visit
             </Button>
             <h4>{project.title}</h4>

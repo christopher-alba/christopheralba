@@ -37,7 +37,7 @@ const Landing = () => {
           <Button
             className="landing-button-info"
             onClick={() => {
-              document.getElementsByClassName("about-div")[0].scrollIntoView();
+              document.getElementsByClassName("about-div")[0].scrollIntoView({behavior: "smooth"});
             }}
           >
             LEARN MORE ABOUT ME
