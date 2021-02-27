@@ -11,7 +11,7 @@ const Technologies = () => {
       <div className="technologies-text-div">
         <Container className="technologies-container">
           <h1 data-aos="fade-up" className="technologies-header">
-            My Technologies
+            MY TECHNOLOGIES
           </h1>
           <div className="technologies-list">
             {technologiesData.map((technology) => {
@@ -41,7 +41,7 @@ const Technologies = () => {
                                 </p>
                                 <div
                                   className="technologies-proficiency-bar-inner"
-                                  style={{ width: `${props.number}%` }}
+                                  style={{ width: `${props.number}%`, background: `rgba(1, 49, 183,${props.number/100})` }}
                                 ></div>
                               </div>
                               {technology.learnedFrom.map((source) => (
