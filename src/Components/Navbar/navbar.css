@@ -8,7 +8,7 @@
 
 .navbar-main {
   background: black !important;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0px;
   z-index: 10000;
@@ -24,7 +24,7 @@
   width: 100px;
   text-align: center;
   transition: 0.3s;
-  z-index:10000;
+  z-index:11000;
 }
 
 .navbar-down:hover {
