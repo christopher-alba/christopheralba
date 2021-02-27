@@ -19,6 +19,8 @@ const Portfolio = () => {
               className="portfolio-visit"
               href={project.href}
               variant="dark"
+              target="__blank"
+              rel="noopener noreferer"
             >
               Visit
             </Button>
