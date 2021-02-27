@@ -7,8 +7,36 @@
 }
 
 .navbar-main {
-    background: black !important;
-    position: sticky;
-    top: 0px;
-    z-index: 10000;
+  background: black !important;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 10000;
+  transition: 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+.navbar-down {
+  position: fixed;
+  top: 0px;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  width: 100px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.navbar-down:hover {
+  color: #0131b5;
+}
+
+.navbar-up {
+  background: none;
+  border: none;
+  color:white;
+  font-size:2rem;
+  transition: 0.3s;
+}
+.navbar-up:hover {
+  color: lightgray
 }

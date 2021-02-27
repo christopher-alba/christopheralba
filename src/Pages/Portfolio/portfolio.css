@@ -37,9 +37,10 @@
   transition: 500ms;
   opacity: 0;
 }
-.portfolio-visit:hover {
+.portfolio-visit:hover, .portfolio-visit:focus {
   background-color: rgba(27, 27, 27, 0.445);
   font-size: 3rem;
   transition: 500ms;
   opacity: 1;
 }
+
