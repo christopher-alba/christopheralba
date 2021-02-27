@@ -6,7 +6,10 @@ const Landing = () => {
   return (
     <div
       className="landing-hero-image"
-      style={{ background: `url("./auckland.jpg")` }}
+      style={{
+        background: `url("./auckland.jpg")`,
+        backgroundAttachment: "fixed",
+      }}
     >
       <div className="landing-hero-text" data-aos="fade-right">
         <div>

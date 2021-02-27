@@ -40,7 +40,7 @@
   border: 3px solid black;
 }
 .technologies-proficiency-bar-inner {
-  background: #0131b5;
+  background: rgb(1, 49, 183);
   height:100%;
   position: absolute;
   top:0px;
