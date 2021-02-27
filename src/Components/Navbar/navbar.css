@@ -24,6 +24,7 @@
   width: 100px;
   text-align: center;
   transition: 0.3s;
+  z-index:10000;
 }
 
 .navbar-down:hover {

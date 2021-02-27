@@ -16,7 +16,7 @@ const NavbarMain = (props) => {
       document.getElementsByClassName("navbar-main")[0].style.opacity = "1";
       setNavbarToggle(true);
     } else {
-      document.getElementsByClassName("navbar-main")[0].style.top = "-70px";
+      document.getElementsByClassName("navbar-main")[0].style.top = "-100px";
       document.getElementsByClassName("navbar-main")[0].style.opacity = "0";
       setNavbarToggle(false);
     }
