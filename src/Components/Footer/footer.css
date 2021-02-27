@@ -29,8 +29,12 @@
     color:white;
 }
 .footer-link:hover{
-    color:#2851c2;
+    color:rgb(23, 162, 184);;
     text-decoration: none;
+}
+.footer-link:focus{
+    outline: none;
+    color: rgb(23, 162, 184);
 }
 
 @media (max-width:800px){

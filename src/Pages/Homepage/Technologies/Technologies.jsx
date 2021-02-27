@@ -41,7 +41,7 @@ const Technologies = () => {
                                 </p>
                                 <div
                                   className="technologies-proficiency-bar-inner"
-                                  style={{ width: `${props.number}%`, background: `rgba(1, 49, 183,${props.number/100})` }}
+                                  style={{ width: `${props.number}%`, background: `rgb(23, 162, 184,${props.number/100})` }}
                                 ></div>
                               </div>
                               {technology.learnedFrom.map((source) => (

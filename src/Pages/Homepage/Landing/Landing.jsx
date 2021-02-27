@@ -40,6 +40,7 @@ const Landing = () => {
           </div>
           <Button
             className="landing-button-info"
+            variant="info"
             onClick={() => {
               document
                 .getElementsByClassName("about-div")[0]
