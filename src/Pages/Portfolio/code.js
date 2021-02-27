@@ -1,4 +1,4 @@
-.portfolio-div {
+const code = `.portfolio-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,27 +9,27 @@
 .portfolio-landing {
   width: 100%;
   height: 50vh;
+  background: black;
   margin-bottom: 100px;
-  position: relative;
+  position:relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
-  overflow: hidden;
+  color: white;
+  overflow:hidden;
 }
-.portfolio-landing h1 {
+.portfolio-landing h1{
   position: relative;
   z-index: 10;
-  text-align: center;
 }
 #titlecontent {
   position: absolute;
   top: 100%;
-  animation: scroll 20s linear 0s infinite;
-  color: white;
+  animation: scroll 20s linear 4s infinite;
+  color:white;
 }
 .language-css {
-  color: rgb(192, 192, 192);
+  color: white;
 }
 @keyframes scroll {
   0% {
@@ -41,13 +41,11 @@
 }
 .portfolio-project-div img {
   max-width: 100%;
-  border: 1px solid #343a40;
 }
 .portfolio-project-div {
   width: 322px;
   margin: 20px;
   position: relative;
-  flex-grow: 1
 }
 
 .portfolio-hashtags {
@@ -58,23 +56,29 @@
 .portfolio-hashtag {
   margin-right: 10px;
 }
-.portfolio-visit{
+
+.portfolio-visit {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 0px;
+  border-color: lightgray;
+  background-color: rgba(27, 27, 27, 0);
   width: 100%;
-  border-radius: 0%;
-  margin-bottom:20px;
+  height: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+  opacity: 0;
 }
-@media (max-width: 1000px) {
-  .portfolio-landing h1 {
-    color:white;
-    height:100%;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.597);
-    margin-bottom: 0px;
-  }
-  .portfolio-landing{
-    margin-bottom: 20px;
-  }
+.portfolio-visit:hover,
+.portfolio-visit:focus {
+  background-color: rgba(27, 27, 27, 0.445);
+  font-size: 3rem;
+  transition: 500ms;
+  opacity: 1;
 }
+`;
+
+export default code;
