@@ -32,7 +32,7 @@ const Technologies = () => {
                         >
                           <div className="technologies-technology-div-inner">
                             <div className="technologies-technology-name">
-                              <h2>{technology.name}</h2>
+                              <h2 className="technologies-name">{technology.name}</h2>
                             </div>
                             <div style={{ width: "100%" }}>
                               <div className="technologies-proficiency-bar">

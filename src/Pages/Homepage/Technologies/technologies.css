@@ -30,6 +30,9 @@
 .technologies-technology-name {
   width: 300px;
 }
+.technologies-name{
+  font-weight:200;
+}
 .technologies-proficiency-bar{
   height: 30px;
   width: 100%;
