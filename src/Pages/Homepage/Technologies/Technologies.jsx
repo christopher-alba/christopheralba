@@ -7,31 +7,29 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const Technologies = () => {
   return (
-    <div
-      className="technologies-div"
-      style={{
-        background: `url("./technology.jpg")`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <div className="technologies-div">
       <div className="technologies-text-div">
         <Container className="technologies-container">
-          <h1 data-aos="fade-up" className="technologies-header">My Technologies</h1>
+          <h1 data-aos="fade-up" className="technologies-header">
+            My Technologies
+          </h1>
           <div className="technologies-list">
             {technologiesData.map((technology) => {
               return (
                 <VisibilitySensor>
                   {({ isVisible }) => (
                     <Spring
-                      from={{ number: 0}}
+                      from={{ number: 0 }}
                       to={{ number: isVisible ? technology.proficiency : 0 }}
                       config={{
                         duration: 1000 * (technology.proficiency / 100),
                       }}
                     >
                       {(props) => (
-                        <div className="technologies-technology-div" data-aos="fade-up">
+                        <div
+                          className="technologies-technology-div"
+                          data-aos="fade-up"
+                        >
                           <div className="technologies-technology-div-inner">
                             <div className="technologies-technology-name">
                               <h2>{technology.name}</h2>

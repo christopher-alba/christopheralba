@@ -1,7 +1,4 @@
 .technologies-div {
-  background-repeat: no-repeat;
-  background-position: 100px 5px;
-  background-size: cover;
   min-height: 100vh;
 }
 
@@ -11,7 +8,7 @@
 
 .technologies-text-div {
   background: rgb(0, 0, 0);
-  background: linear-gradient(to right, #2b2b2be3 63%, #00000079 63%);
+  background: linear-gradient(to right, #2b2b2be3 63%, #ffffff 63%);
   padding-top: 100px;
   padding-bottom: 100px;
   width: 100%;
