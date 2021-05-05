@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import HorizontalScrollArea from "../../../Components/HorizontalScrollArea";
 import "./workExperience.css";
 
 const WorkExperience = () => {
@@ -57,38 +58,18 @@ const WorkExperience = () => {
                 retrospectives as part of an agile workplace, and reviewing pull
                 requests.
               </p>
-              <div className="images-scroll-div-outer">
-                <div
-                  onClick={() => {
-                    console.log("testingA");
-                    let scrollingDiv = document.getElementsByClassName(
-                      "images-horizontal-scroll-div"
-                    )[0];
-                    scrollingDiv.style.left =
-                      scrollingDiv.style.left - 50 + "px";
-                    console.log(scrollingDiv.style.left);
-                  }}
-                >
-                  <h1>Left</h1>
-                </div>
-                <div className="images-wrapper">
-                  <div className="images-horizontal-scroll-div">
-                    <img src="./jasper.png" alt="" />
-                    <img src="./jasper.png" alt="" />
-                    <img src="./jasper.png" alt="" />
-                    <img src="./jasper.png" alt="" />
-                    <img src="./jasper.png" alt="" />
-                    <img src="./jasper.png" alt="" />
-                    <img src="./jasper.png" alt="" />
-                    <img src="./jasper.png" alt="" />
-                    <img src="./jasper.png" alt="" />
-                    <img src="./jasper.png" alt="" />
-                  </div>
-                </div>
-                <div>
-                  <h1>Right</h1>
-                </div>
-              </div>
+              <HorizontalScrollArea>
+                <img src="./auckland.jpg" alt="" />
+                <img src="./jasper.png" alt="" />
+                <img src="./jasper.png" alt="" />
+                <img src="./jasper.png" alt="" />
+                <img src="./jasper.png" alt="" />
+                <img src="./jasper.png" alt="" />
+                <img src="./jasper.png" alt="" />
+                <img src="./jasper.png" alt="" />
+                <img src="./jasper.png" alt="" />
+                <img src="./jasper.png" alt="" />
+              </HorizontalScrollArea>
             </Col>
           </Row>
         </div>

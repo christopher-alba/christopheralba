@@ -19,22 +19,6 @@
   width: 200px;
   height: auto;
 }
-
-.images-horizontal-scroll-div {
-  display:flex;
-  flex-wrap: nowrap;
-  width:fit-content;
-  overflow:hidden;
-  position:relative;
-  transition:500ms;
-
-}
-.images-scroll-div-outer{
-  display:flex;
-}
-.images-wrapper{
-  overflow:hidden;
-}
 @media (max-width: 767px) {
   .work-experience-img-container {
     display: flex;
