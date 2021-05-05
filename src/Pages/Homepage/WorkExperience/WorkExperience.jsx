@@ -6,7 +6,9 @@ const WorkExperience = () => {
   return (
     <div className="work-experience-div">
       <Container>
-        <h1 className="work-experience-header" data-aos="fade-up">MY WORK EXPERIENCE</h1>
+        <h1 className="work-experience-header" data-aos="fade-up">
+          MY WORK EXPERIENCE
+        </h1>
         <div className="work-experience-item">
           <Row>
             <Col md={4}></Col>
@@ -16,7 +18,12 @@ const WorkExperience = () => {
           </Row>
           <Row>
             <Col md={4} className="work-experience-img-container">
-              <img data-aos="fade-up" className="work-experience-img" src="./jasper.png" alt="" />
+              <img
+                data-aos="fade-up"
+                className="work-experience-img"
+                src="./jasper.png"
+                alt=""
+              />
             </Col>
             <Col md={8} data-aos="fade-up">
               <p>
@@ -50,6 +57,38 @@ const WorkExperience = () => {
                 retrospectives as part of an agile workplace, and reviewing pull
                 requests.
               </p>
+              <div className="images-scroll-div-outer">
+                <div
+                  onClick={() => {
+                    console.log("testingA");
+                    let scrollingDiv = document.getElementsByClassName(
+                      "images-horizontal-scroll-div"
+                    )[0];
+                    scrollingDiv.style.left =
+                      scrollingDiv.style.left - 50 + "px";
+                    console.log(scrollingDiv.style.left);
+                  }}
+                >
+                  <h1>Left</h1>
+                </div>
+                <div className="images-wrapper">
+                  <div className="images-horizontal-scroll-div">
+                    <img src="./jasper.png" alt="" />
+                    <img src="./jasper.png" alt="" />
+                    <img src="./jasper.png" alt="" />
+                    <img src="./jasper.png" alt="" />
+                    <img src="./jasper.png" alt="" />
+                    <img src="./jasper.png" alt="" />
+                    <img src="./jasper.png" alt="" />
+                    <img src="./jasper.png" alt="" />
+                    <img src="./jasper.png" alt="" />
+                    <img src="./jasper.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <h1>Right</h1>
+                </div>
+              </div>
             </Col>
           </Row>
         </div>
@@ -57,12 +96,19 @@ const WorkExperience = () => {
           <Row>
             <Col md={4}></Col>
             <Col md={8}>
-              <h2 data-aos="fade-up">FULL STACK WEB DEVELOPER AT ENSPIRAL DEV ACADEMY</h2>
+              <h2 data-aos="fade-up">
+                FULL STACK WEB DEVELOPER AT ENSPIRAL DEV ACADEMY
+              </h2>
             </Col>
           </Row>
           <Row>
             <Col md={4} className="work-experience-img-container">
-              <img data-aos="fade-up" className="work-experience-img" src="./eda.png" alt="" />
+              <img
+                data-aos="fade-up"
+                className="work-experience-img"
+                src="./eda.png"
+                alt=""
+              />
             </Col>
             <Col md={8} data-aos="fade-up">
               <p>

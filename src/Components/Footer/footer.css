@@ -34,7 +34,7 @@
 }
 .footer-link:focus{
     outline: none;
-    color: rgb(23, 162, 184);
+    color: rgb(23, 162, 184);   
 }
 
 @media (max-width:800px){

@@ -13,20 +13,35 @@
   margin-bottom: 100px;
 }
 .work-experience-item:last-of-type {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .work-experience-img {
   width: 200px;
   height: auto;
 }
 
+.images-horizontal-scroll-div {
+  display:flex;
+  flex-wrap: nowrap;
+  width:fit-content;
+  overflow:hidden;
+  position:relative;
+  transition:500ms;
+
+}
+.images-scroll-div-outer{
+  display:flex;
+}
+.images-wrapper{
+  overflow:hidden;
+}
 @media (max-width: 767px) {
   .work-experience-img-container {
     display: flex;
     justify-content: center;
   }
   .work-experience-img {
-      margin-top:100px;
-      margin-bottom:100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
