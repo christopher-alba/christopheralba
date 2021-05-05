@@ -6,10 +6,10 @@ const Engineering = () => {
   return (
     <Container className="engineering-div">
       <div>
-        <h1 data-aos="fade-up" className="engineering-header">
+        <h1 data-aos="fade-in" className="engineering-header">
           AN ENGINEERING STUDENT
         </h1>
-        <p data-aos="fade-up">
+        <p data-aos="fade-in">
           I am currently a third year engineering student at The University of
           Auckland studying a Bachelors of Engineering (honours) in Computer
           Systems. In this degree, we learn about electronics, low level
@@ -21,7 +21,7 @@ const Engineering = () => {
         </p>
       </div>
 
-      <img data-aos="fade-up" src="./uoa.jpg" alt="" className="engineering-img" />
+      <img data-aos="fade-in" src="./uoa.jpg" alt="" className="engineering-img" />
     </Container>
   );
 };

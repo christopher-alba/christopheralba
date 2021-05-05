@@ -28,7 +28,7 @@ const Portfolio = () => {
       <Container>
         <div className="portfolio-div">
           {projects.map((project) => (
-            <div className="portfolio-project-div" data-aos="fade-up">
+            <div className="portfolio-project-div" data-aos="fade-in">
               <img src={project.imgUrl} alt="" />
               <Button
                 className="portfolio-visit"

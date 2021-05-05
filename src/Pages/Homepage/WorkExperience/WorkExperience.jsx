@@ -1,24 +1,32 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import HorizontalScrollArea from "../../../Components/HorizontalScrollArea";
 import "./workExperience.css";
 
 const WorkExperience = () => {
   return (
     <div className="work-experience-div">
       <Container>
-        <h1 className="work-experience-header" data-aos="fade-up">MY WORK EXPERIENCE</h1>
+        <h1 className="work-experience-header" data-aos="fade-in">
+          MY WORK EXPERIENCE
+        </h1>
         <div className="work-experience-item">
           <Row>
             <Col md={4}></Col>
             <Col md={8}>
-              <h2 data-aos="fade-up">SOFTWARE ENGINEER INTERN AT JASPER</h2>
+              <h2 data-aos="fade-in">SOFTWARE ENGINEER INTERN AT JASPER</h2>
             </Col>
           </Row>
           <Row>
             <Col md={4} className="work-experience-img-container">
-              <img data-aos="fade-up" className="work-experience-img" src="./jasper.png" alt="" />
+              <img
+                data-aos="fade-in"
+                className="work-experience-img"
+                src="./jasper.png"
+                alt=""
+              />
             </Col>
-            <Col md={8} data-aos="fade-up">
+            <Col md={8} data-aos="fade-in">
               <p>
                 Jasper is a company who makes investing in commercial real
                 estate more accessible to the public. During my time at Jasper,
@@ -52,19 +60,34 @@ const WorkExperience = () => {
               </p>
             </Col>
           </Row>
+          <div data-aos="fade-in" className="horizontal-scroll-area">
+            <HorizontalScrollArea>
+              <img src="./jasper1.jpg" alt="" />
+              <img src="./jasper2.jpg" alt="" />
+              <img src="./jasper3.jpg" alt="" />
+              <img src="./jasper4.jpg" alt="" />
+            </HorizontalScrollArea>
+          </div>
         </div>
         <div className="work-experience-item">
           <Row>
             <Col md={4}></Col>
             <Col md={8}>
-              <h2 data-aos="fade-up">FULL STACK WEB DEVELOPER AT ENSPIRAL DEV ACADEMY</h2>
+              <h2 data-aos="fade-in">
+                FULL STACK WEB DEVELOPER AT ENSPIRAL DEV ACADEMY
+              </h2>
             </Col>
           </Row>
           <Row>
             <Col md={4} className="work-experience-img-container">
-              <img data-aos="fade-up" className="work-experience-img" src="./eda.png" alt="" />
+              <img
+                data-aos="fade-in"
+                className="work-experience-img"
+                src="./eda.png"
+                alt=""
+              />
             </Col>
-            <Col md={8} data-aos="fade-up">
+            <Col md={8} data-aos="fade-in">
               <p>
                 EDA’s curriculum is designed and taught by currently employed
                 software developers and was designed to turn someone from no

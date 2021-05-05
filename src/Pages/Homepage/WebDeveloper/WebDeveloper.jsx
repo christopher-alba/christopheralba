@@ -6,8 +6,8 @@ const WebDeveloper = () => {
   return (
     <div className="web-developer-div">
       <Container>
-        <h1 className="web-developer-header" data-aos="fade-up">AN ASPIRING WEB DEVELOPER</h1>
-        <p data-aos="fade-up">
+        <h1 className="web-developer-header" data-aos="fade-in">AN ASPIRING WEB DEVELOPER</h1>
+        <p data-aos="fade-in">
           In my spare time, like during university holidays or in the weekends,
           I practice web development. The problem solving, creativity, and
           challenge of web development are some of the things which lead me to
@@ -20,7 +20,7 @@ const WebDeveloper = () => {
           Jasper , working as a frontend engineer and learning plenty about best
           practices and modern frontend techniques and technologies.
         </p>
-        <div className="web-developer-images-div" data-aos="fade-up">
+        <div className="web-developer-images-div" data-aos="fade-in">
           <img
             src="./jasper.png"
             alt="jasper"
