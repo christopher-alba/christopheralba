@@ -9,7 +9,8 @@
 
 .images-horizontal-scroll-div img {
   object-fit: cover;
-  width:400px;
+  width: 500px;
+  padding: 20px;
 }
 
 .images-scroll-div-outer {
@@ -18,9 +19,27 @@
 }
 .images-wrapper {
   overflow-x: scroll;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   max-height: 400px;
 }
-.images-wrapper::-webkit-scrollbar {
-  display: none;
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  .arrow-container {
+    display: none;
+  }
+  .images-horizontal-scroll-div img {
+    object-fit: cover;
+    width: 500px;
+    padding: 0px;
+  }
+  .images-horizontal-scroll-div img:not(:last-of-type) {
+    padding: 0px;
+    padding-right: 20px;
+  }
 }

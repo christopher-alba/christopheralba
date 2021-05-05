@@ -11,8 +11,9 @@ const HorizontalScrollArea = (props) => {
           )[0];
           scrollingDiv.scrollLeft -= 400;
         }}
+        className="arrow-container"
       >
-        <h1>Left</h1>
+        <i class="fas fa-chevron-left"></i>
       </div>
       <div className="images-wrapper">
         <div className="images-horizontal-scroll-div">{props.children}</div>
@@ -24,8 +25,9 @@ const HorizontalScrollArea = (props) => {
           )[0];
           scrollingDiv.scrollLeft += 400;
         }}
+        className="arrow-container" 
       >
-        <h1>Right</h1>
+        <i class="fas fa-chevron-right"></i>
       </div>
     </div>
   );

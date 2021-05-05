@@ -19,6 +19,9 @@
   width: 200px;
   height: auto;
 }
+.horizontal-scroll-area{
+  margin-top: 50px;
+}
 @media (max-width: 767px) {
   .work-experience-img-container {
     display: flex;

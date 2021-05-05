@@ -10,7 +10,7 @@ const Technologies = () => {
     <div className="technologies-div">
       <div className="technologies-text-div">
         <Container className="technologies-container">
-          <h1 data-aos="fade-up" className="technologies-header">
+          <h1 data-aos="fade-in" className="technologies-header">
             MY TECHNOLOGIES
           </h1>
           <div className="technologies-list">
@@ -28,7 +28,7 @@ const Technologies = () => {
                       {(props) => (
                         <div
                           className="technologies-technology-div"
-                          data-aos="fade-up"
+                          data-aos="fade-in"
                         >
                           <div className="technologies-technology-div-inner">
                             <div className="technologies-technology-name">
