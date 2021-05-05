@@ -23,14 +23,17 @@
   scroll-behavior: smooth;
   max-height: 400px;
 }
+.images-wrapper::-webkit-scrollbar {
+  display: none;
+}
 .arrow-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
-.arrow-container:hover{
-    cursor: pointer;
+.arrow-container:hover {
+  cursor: pointer;
 }
 @media (max-width: 600px) {
   .arrow-container {
