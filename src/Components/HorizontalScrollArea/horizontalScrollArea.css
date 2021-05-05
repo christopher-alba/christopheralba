@@ -29,6 +29,9 @@
   justify-content: center;
   padding: 20px;
 }
+.arrow-container:hover{
+    cursor: pointer;
+}
 @media (max-width: 600px) {
   .arrow-container {
     display: none;
