@@ -19,8 +19,14 @@
   width: 200px;
   height: auto;
 }
-.horizontal-scroll-area{
+.horizontal-scroll-area {
   margin-top: 50px;
+  height: auto;
+  overflow: hidden;
+}
+.horizontal-scroll-area .slide img {
+  height: 500px;
+  object-fit: cover;
 }
 @media (max-width: 767px) {
   .work-experience-img-container {
@@ -30,5 +36,8 @@
   .work-experience-img {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+  .horizontal-scroll-area .thumbs-wrapper {
+    display:none;
   }
 }

@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import HorizontalScrollArea from "../../../Components/HorizontalScrollArea";
 import "./workExperience.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 const WorkExperience = () => {
   return (
@@ -61,12 +63,20 @@ const WorkExperience = () => {
             </Col>
           </Row>
           <div data-aos="fade-in" className="horizontal-scroll-area">
-            <HorizontalScrollArea>
-              <img src="./jasper1.jpg" alt="" />
-              <img src="./jasper2.jpg" alt="" />
-              <img src="./jasper3.jpg" alt="" />
-              <img src="./jasper4.jpg" alt="" />
-            </HorizontalScrollArea>
+            <Carousel autoPlay infiniteLoop>
+              <div>
+                <img src="./jasper1.jpg" alt="" />
+              </div>
+              <div>
+                <img src="./jasper2.jpg" alt="" />
+              </div>
+              <div>
+                <img src="./jasper3.jpg" alt="" />
+              </div>
+              <div>
+                <img src="./jasper4.jpg" alt="" />
+              </div>
+            </Carousel>
           </div>
         </div>
         <div className="work-experience-item">
