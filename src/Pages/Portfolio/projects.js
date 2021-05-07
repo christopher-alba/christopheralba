@@ -117,23 +117,25 @@ const projects = [
     ],
   },
   {
-    title: "Binary Options Manager",
-    imgUrl: "./financialPlanner.png",
-    description:
-      "An app that helps users manage their binary options trading by manually inputing trades and calculating how many successful trades they need to do at minimum.",
-    href: "https://binaryoptions.herokuapp.com/#/",
+    title: "Small Scale E-commerce V2",
+    imgUrl: "./christee.png",
+    description: "This is the 2nd e-commerce simulation site  that I have made. It has more features than the first one. Login using [username: admin3 and password: admin3] to have full access to all the features, such as the ability to add, edit, and delete products in the shop. There is no way to actually purchase any of the items as they do not really exist.",
+    href: "http://chris-tee.herokuapp.com/#/",
     tags: [
       "HTML",
       "CSS",
       "Javascript",
       "React.js",
-      "React-Redux",
-      "React-Bootstrap",
-      "Desktop",
-      "Passport.js",
+      "GraphQL",
       "Node.js",
       "Express.js",
-      "Knex.js",
+      "MongoDB",
+      "Mongoose",
+      "Authentication",
+      "Material-UI",
+      "Apollo",
+      "Other React Libraries",
+      "Desktop",
     ],
   },
   {
@@ -159,4 +161,4 @@ const projects = [
   },
 ];
 
-export default projects
+export default projects;
