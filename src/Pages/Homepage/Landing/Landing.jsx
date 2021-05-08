@@ -18,7 +18,7 @@ const Landing = () => {
             <em> Web Developer</em>
           </h5>
           <h5 className="sub-header-compsys">
-            <em>Computer Systems Engineering Student</em>
+            <em>Penultimate Computer Systems Engineer</em>
           </h5>
           <div>
             <Button

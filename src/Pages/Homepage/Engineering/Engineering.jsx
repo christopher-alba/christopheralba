@@ -10,7 +10,7 @@ const Engineering = () => {
           AN ENGINEERING STUDENT
         </h1>
         <p data-aos="fade-in">
-          I am currently a third year engineering student at The University of
+          I am currently a penultimate year engineering student at The University of
           Auckland studying a Bachelors of Engineering (honours) in Computer
           Systems. In this degree, we learn about electronics, low level
           software languages like C, C++, and other languages (Java, Python,
