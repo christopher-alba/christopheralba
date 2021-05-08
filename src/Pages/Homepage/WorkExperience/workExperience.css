@@ -5,8 +5,8 @@
 }
 
 .work-experience-header {
-  color: #17a2b8;  
-  font-family: 'Bree Serif', serif;
+  color: #17a2b8;
+  font-family: "Bree Serif", serif;
   margin-bottom: 100px;
 }
 
@@ -38,7 +38,11 @@
     margin-top: 100px;
     margin-bottom: 100px;
   }
+  .horizontal-scroll-area .slide img {
+    height: 300px;
+    object-fit: cover;
+  }
   .horizontal-scroll-area .thumbs-wrapper {
-    display:none;
+    display: none;
   }
 }
