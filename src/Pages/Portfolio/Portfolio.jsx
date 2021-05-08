@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import projects from "./projects";
 import "./portfolio.css";
-import code from "./code";
 const Portfolio = () => {
   useEffect(() => {
     document.body.scrollTop = 0; // For Safari
@@ -13,17 +12,11 @@ const Portfolio = () => {
     <div className="portfolio-outer-div">
       <div
         className="portfolio-landing"
-        style={{
-          background: `url("auckland.jpg")`,
-          backgroundSize: "cover",
-        }}
-      >
-        <h1>WELCOME TO MY PORTFOLIO</h1>
-        <div id="titlecontent">
-          <pre>
-            <code className="language-css">{code}</code>
-          </pre>
-        </div>
+        data-aos="fade-in"
+        >
+        <Container>
+          <h1>PROJECTS</h1>
+        </Container>
       </div>
       <Container>
         <div className="portfolio-div">
@@ -33,7 +26,7 @@ const Portfolio = () => {
               <Button
                 className="portfolio-visit"
                 href={project.href}
-                variant="dark"
+                variant="info"
                 target="__blank"
                 rel="noopener noreferer"
               >

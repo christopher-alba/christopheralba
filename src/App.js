@@ -17,7 +17,7 @@ const App = () => {
         render={(props) => <NavbarMain pathName={props.location.pathname} />}
       />
       <Route exact path="/" component={Homepage} />
-      <Route exact path="/portfolio" component={Portfolio} />
+      <Route exact path="/projects" component={Portfolio} />
       <Footer />
     </Fragment>
   );

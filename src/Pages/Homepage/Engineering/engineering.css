@@ -1,11 +1,12 @@
 .engineering-div {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
 }
 
 .engineering-header {
-  color: #17a2b8;
+  color: #17a2b8;  
+  font-family: 'Bree Serif', serif;
 }
 
 .engineering-img {

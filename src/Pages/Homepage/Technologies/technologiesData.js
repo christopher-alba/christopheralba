@@ -75,7 +75,7 @@ const technologies = [
       learnedFrom: ["The University of Auckland"],
     },
     {
-      name: "Micro-controllers",
+      name: "Micro controllers",
       proficiency: 75,
       learnedFrom: ["The University of Auckland"],
     },
@@ -99,11 +99,7 @@ const technologies = [
       proficiency: 90,
       learnedFrom: ["self-taught"],
     },
-    {
-      name: "Photoshop",
-      proficiency: 50,
-      learnedFrom: ["self-taught"],
-    },
+
   ];
 
   export default technologies

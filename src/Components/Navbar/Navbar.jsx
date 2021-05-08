@@ -13,14 +13,9 @@ const NavbarMain = (props) => {
 
   return (
     <Fragment>
-      <Navbar
-        className="navbar-main"
-        bg="dark"
-        expand="lg"
-        variant="dark"
-      >
+      <Navbar className="navbar-main" bg="light" expand="lg" variant="light">
         <Container>
-          <Navbar.Brand href="#/">Christopher Sy Alba</Navbar.Brand>
+          <Navbar.Brand href="#/">My Portfolio</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
@@ -31,11 +26,18 @@ const NavbarMain = (props) => {
                 Home
               </Nav.Link>
               <Nav.Link
-                className={location === "/portfolio" ? "active" : ""}
-                href="#/portfolio"
+                className={`${
+                  location === "/projects" ? "active" : ""
+                } nav-link-projects`}
+                href="#/projects"
               >
-                Portfolio
+                Projects
               </Nav.Link>
+              <Nav.Item>
+                <div onClick={() => {
+                  document.getElementsByClassName("footer-div")[0].scrollIntoView({ behavior: "smooth" });
+                }}className="nav-contact">Contact</div>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Container>

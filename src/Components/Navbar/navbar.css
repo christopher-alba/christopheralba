@@ -2,19 +2,33 @@
   color: white;
 }
 
-.nav-link-home {
+.nav-link-home, .nav-link-projects {
   margin-right: 25px;
 }
-
+.nav-contact{
+  padding:.5rem;
+  padding-left:30px;
+  padding-right:30px;
+  background:#17a2b8;
+  color:white;
+}
+.nav-contact:hover{
+  background:#127d8d;
+  cursor:pointer;
+}
 .navbar-main {
-  background: black !important;
+  background:white !important;
   position: sticky;
   width: 100%;
   top: 0px;
   z-index: 10000;
-  transition: 0.3s; /* Transition effect when sliding down (and up) */
+  margin-top:50px;
 }
-
+.navbar-brand {
+  font-size:2rem;
+  color: #17a2b8 !important;
+  letter-spacing: 5px;
+}
 .navbar-down {
   position: fixed;
   top: 0px;
@@ -40,4 +54,18 @@
 }
 .navbar-up:hover {
   color: lightgray
+}
+
+@media (max-width:1000px){
+  .navbar-brand {
+    font-size:1.5rem;
+    letter-spacing: 2.5px;
+  }
+  .navbar-main{
+    margin-top:0px;
+  }
+  .nav-contact{
+    width:130px;
+    text-align: center;
+  }
 }

@@ -5,6 +5,12 @@ import "./about.css";
 const About = () => {
   return (
     <Container className="about-div">
+      <img
+        data-aos="fade-in"
+        src="./profileImage.png"
+        alt="profile"
+        className="about-img"
+      />
       <div className="about-txt-div" data-aos="fade-in">
         <h1 className="about-header">ABOUT ME</h1>
         <p>
@@ -25,7 +31,6 @@ const About = () => {
           </em>
         </p>
       </div>
-      <img data-aos="fade-in" src="./profileImage.png" alt="profile" className="about-img" />
     </Container>
   );
 };

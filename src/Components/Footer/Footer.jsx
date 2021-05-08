@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import "./footer.css";
 
 const Footer = () => {
@@ -34,9 +34,18 @@ const Footer = () => {
             >
               <h4>chris.alba.dev@gmail.com</h4>
             </a>
+            <Button
+              onClick={() => {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+              }}
+              variant="dark"
+            >
+              Scroll to top
+            </Button>
           </div>
           <div className="footer-links">
-            <h2 data-aos="fade-in">My Online Links</h2>
+            <h1 data-aos="fade-in">My Online Links</h1>
             <a
               href="https://www.facebook.com/christopher.alba.357/"
               target="__blank"
@@ -49,7 +58,7 @@ const Footer = () => {
               </h4>
             </a>
             <a
-              href="https://www.linkedin.com/in/christopher-alba-86845b191/"
+              href="https://www.linkedin.com/in/christopher-alba/"
               target="__blank"
               rel="noopener noreferer"
               className="footer-link"

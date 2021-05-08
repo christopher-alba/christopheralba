@@ -1,11 +1,12 @@
 .web-developer-div {
-  background: #ececec;
+  background: #ffffff;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .web-developer-header {
-  color: #17a2b8;
+  color: #17a2b8;  
+  font-family: 'Bree Serif', serif;
 }
 
 .web-developer-image {

@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect } from "react";
 import About from "./About";
 import Engineering from "./Engineering";
-import Landing from "./Landing";
 import WebDeveloper from "./WebDeveloper";
 import WorkExperience from "./WorkExperience";
 import Technologies from "./Technologies";
+import LandingBasic from "./LandingBasic";
 
 const Homepage = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const Homepage = () => {
   });
   return (
     <Fragment>
-      <Landing />
+      <LandingBasic/>
       <About />
       <WebDeveloper />
       <Engineering />

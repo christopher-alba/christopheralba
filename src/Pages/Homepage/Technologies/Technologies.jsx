@@ -22,7 +22,7 @@ const Technologies = () => {
                       from={{ number: 0 }}
                       to={{ number: isVisible ? technology.proficiency : 0 }}
                       config={{
-                        duration: 1000 * (technology.proficiency / 100),
+                        duration: 500 * (technology.proficiency / 100),
                       }}
                     >
                       {(props) => (
