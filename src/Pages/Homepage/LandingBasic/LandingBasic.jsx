@@ -24,14 +24,14 @@ const LandingBasic = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                VIEW MY CV
+                CV / RESUME
               </Button>
               <Button
                 className="landing-button-light-basic"
                 variant="light"
                 href="#/projects"
               >
-                VIEW MY PROJECTS
+                PERSONAL PROJECTS
               </Button>
             </div>
             <Button
@@ -48,7 +48,7 @@ const LandingBasic = () => {
           </div>
         </div>
       </div>
-      <img data-aos="fade-in" src="./webdev.png" alt=""/>
+      <img data-aos="fade-in" src="./laptopman.jpg" alt=""/>
     </Container>
   );
 };

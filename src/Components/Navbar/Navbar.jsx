@@ -14,7 +14,7 @@ const NavbarMain = (props) => {
     let navbar = document.getElementsByClassName("navbar-main")[0];
     listener = document.addEventListener("scroll", (e) => {
       var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 120) {
+      if (scrolled >= 50) {
         if (scrollState !== "amir") {
           setScrollState("amir");
           navbar.classList.add("whiteBackground");
