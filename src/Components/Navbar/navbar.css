@@ -17,7 +17,7 @@
   cursor:pointer;
 }
 .navbar-main {
-  background:white !important;
+  background:transparent !important;
   position: sticky;
   width: 100%;
   top: 0px;
