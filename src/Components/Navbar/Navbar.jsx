@@ -6,10 +6,30 @@ import "./navbar.css";
 
 const NavbarMain = (props) => {
   const [location, setLocation] = useState(props.pathName);
-
+  
+  const [scrollState, setScrollState] = useState("top");
   useEffect(() => {
+    let listener = null;
     setLocation(props.pathName);
-  }, [props.pathName]);
+    let navbar = document.getElementsByClassName("navbar-main")[0];
+    listener = document.addEventListener("scroll", (e) => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 50) {
+        if (scrollState !== "amir") {
+          setScrollState("amir");
+          navbar.classList.add("whiteBackground");
+        }
+      } else {
+        if (scrollState !== "top") {
+          setScrollState("top");
+          navbar.classList.remove("whiteBackground");
+        }
+      }
+    });
+    return () => {
+      document.removeEventListener("scroll", listener);
+    };
+  }, [props.pathName, scrollState]);
 
   return (
     <Fragment>
@@ -34,9 +54,16 @@ const NavbarMain = (props) => {
                 Projects
               </Nav.Link>
               <Nav.Item>
-                <div onClick={() => {
-                  document.getElementsByClassName("footer-div")[0].scrollIntoView({ behavior: "smooth" });
-                }}className="nav-contact">Contact</div>
+                <div
+                  onClick={() => {
+                    document
+                      .getElementsByClassName("footer-div")[0]
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="nav-contact"
+                >
+                  Contact
+                </div>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>

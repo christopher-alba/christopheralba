@@ -17,12 +17,17 @@
   cursor:pointer;
 }
 .navbar-main {
-  background:white !important;
+  background:transparent !important;
   position: sticky;
   width: 100%;
   top: 0px;
   z-index: 10000;
   margin-top:50px;
+  transition:500ms;
+}
+.whiteBackground{
+  background:white !important;
+  transition:500ms;
 }
 .navbar-brand {
   font-size:2rem;
