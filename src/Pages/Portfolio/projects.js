@@ -119,7 +119,8 @@ const projects = [
   {
     title: "Small Scale E-commerce V2",
     imgUrl: "./christee.png",
-    description: "This is the 2nd e-commerce simulation site  that I have made. It has more features than the first one. Login using [username: admin3 and password: admin3] to have full access to all the features, such as the ability to add, edit, and delete products in the shop. There is no way to actually purchase any of the items as they do not really exist.",
+    description:
+      "This is the 2nd e-commerce simulation site  that I have made. It has more features than the first one. Login using [username: admin3 and password: admin3] to have full access to all the features, such as the ability to add, edit, and delete products in the shop. There is no way to actually purchase any of the items as they do not really exist.",
     href: "http://chris-tee.herokuapp.com/#/",
     tags: [
       "HTML",
@@ -157,6 +158,27 @@ const projects = [
       "Semantic-UI-React",
       "Other React Libraries",
       "Desktop",
+    ],
+  },
+  {
+    title: "Small Scale Ecommerce V5 (under development)",
+    imgUrl: "./ecommercev5.png",
+    description:
+      "This is a small scale ecommerce site that allows users to browse products and add them to a shopping cart. Admins can create, update, and delete products in the shop route. To access an admin account, login using username: username, and password: password. This site also features a light mode theme and dark mode theme, controlled by a switch.",
+    href: "https://ecommercev5.netlify.app/",
+    tags: [
+      "HTML",
+      "Styled Components",
+      "Javascript",
+      "React.js",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "Mongodb",
+      "Semantic-UI-React",
+      "Other React Libraries",
+      "Desktop",
+      "Mobile",
     ],
   },
 ];
