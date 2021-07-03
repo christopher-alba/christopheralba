@@ -164,7 +164,7 @@ const projects = [
     title: "Small Scale Ecommerce V5 (under development)",
     imgUrl: "./ecommercev5.png",
     description:
-      "This is a small scale ecommerce site that allows users to browse products and add them to a shopping cart. Admins can create, update, and delete products in the shop route. To access an admin account, login using username: username, and password: password. This site also features a light mode theme and dark mode theme, controlled by a switch.",
+      "This is a small scale ecommerce site that allows users to browse products and add them to a shopping cart. Admins can create, update, and delete products in the shop route. To access an admin account, login using username: admin, and password: admin. This site also features a light mode theme and dark mode theme, controlled by a switch.",
     href: "https://ecommercev5.netlify.app/",
     tags: [
       "HTML",
