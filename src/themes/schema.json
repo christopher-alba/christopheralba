@@ -1,0 +1,28 @@
+{
+  "data": {
+    "light": {
+      "name": "light",
+      "colors": {
+        "primary": "white",
+        "primaryHover": "#cfcfcf",
+        "dropShadow": "rgba(0,0,0,0.3)",
+        "overlay": "rgba(0,0,0,0.6)",
+        "secondary": "#303030",
+        "secondaryHover": "#575757",
+        "tertiary": "#00cb5f"
+      }
+    },
+    "dark": {
+      "name": "dark",
+      "colors": {
+        "primary": "#303030",
+        "primaryHover": "#575757",
+        "dropShadow": "rgba(0,0,0,0.3)",
+        "overlay": "rgba(0,0,0,0.6)",
+        "secondary": "white",
+        "secondaryHover": "#cfcfcf",
+        "tertiary": "#00cb5f"
+      }
+    }
+  }
+}
