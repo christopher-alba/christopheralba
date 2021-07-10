@@ -6,10 +6,10 @@
         "primary": "white",
         "primaryHover": "#cfcfcf",
         "dropShadow": "rgba(0,0,0,0.3)",
-        "overlay": "rgba(0,0,0,0.6)",
+        "overlay": "rgba(255,255,255,0.6)",
         "secondary": "#303030",
         "secondaryHover": "#575757",
-        "tertiary": "#00cb5f"
+        "tertiary": "#00a34c"
       }
     },
     "dark": {
