@@ -45,3 +45,22 @@ export const SubHeading = styled("h1")`
   color: ${({ theme }) => theme.colors.secondary};
   text-align: center;
 `;
+
+export const DownArrowWrapper = styled("div")`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  height: 100px;
+  width: 100px;
+  background: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.tertiary};
+  font-size: 3rem;
+  border-radius: 50%;
+  transition: 300ms linear;
+  &:hover {
+    background: ${({ theme }) => theme.colors.tertiary};
+    color: ${({ theme }) => theme.colors.primary};
+  }
+`;

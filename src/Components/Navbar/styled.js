@@ -56,7 +56,7 @@ export const NavbarIcon = styled(Icon)`
   align-items: center;
   margin-left: 10px !important;
   @media (max-width: 1200px) {
-    margin: 10px !important;
+    margin-right: 10px !important;
   }
 `;
 
@@ -70,5 +70,17 @@ export const NavbarThemeBox = styled("div")`
     margin-right: 0px !important;
     position: relative;
     left: -10px;
+  }
+`;
+
+export const NavMenuToggle = styled("button")`
+  background: none;
+  border: 2px solid ${({ theme }) => theme.colors.secondary};
+  border-radius: 5px;
+  color: ${({ theme }) => theme.colors.secondary};
+  width: 40px;
+  &:hover {
+    background: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;

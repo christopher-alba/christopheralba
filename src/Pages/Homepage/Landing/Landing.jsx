@@ -1,5 +1,12 @@
 import React from "react";
-import { DivOuter, DivInner, Name, TextWrapper, SubHeading } from "./styled";
+import {
+  DivOuter,
+  DivInner,
+  Name,
+  TextWrapper,
+  SubHeading,
+  DownArrowWrapper,
+} from "./styled";
 const Landing = () => {
   return (
     <DivOuter>
@@ -12,6 +19,9 @@ const Landing = () => {
           </SubHeading>
           <SubHeading>ASPIRING WEB DEVELOPER</SubHeading>
         </TextWrapper>
+        <DownArrowWrapper>
+          <i className="fas fa-chevron-down"></i>
+        </DownArrowWrapper>
       </DivInner>
     </DivOuter>
   );

@@ -12,7 +12,7 @@ import Homepage from "./Pages/Homepage";
 AOS.init();
 
 const App = () => {
-  const [selectedTheme, setSelectedTheme] = useState(themes.data.light);
+  const [selectedTheme, setSelectedTheme] = useState(themes.data.dark);
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
