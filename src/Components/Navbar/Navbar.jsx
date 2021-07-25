@@ -17,6 +17,7 @@ import useWindowWidth from "../../Hooks/useWindowWidth";
 
 const Navbar = ({ setSelectedTheme, themes, selectedTheme }) => {
   const [dropdown, setDropdown] = useState(false);
+
   const handleRadioChange = (evt, target) => {
     if (target.checked) {
       setSelectedTheme(themes.data.dark);
@@ -33,7 +34,7 @@ const Navbar = ({ setSelectedTheme, themes, selectedTheme }) => {
 
   if (windowWidth > 900) {
     return (
-      <DivOuter>
+      <DivOuter className="navbar-main">
         <JCUXContainer>
           <DivInner>
             <Brand>CSA</Brand>
@@ -59,7 +60,7 @@ const Navbar = ({ setSelectedTheme, themes, selectedTheme }) => {
     );
   } else {
     return (
-      <DivOuter>
+      <DivOuter className="navbar-main">
         <JCUXContainer>
           <DivInner>
             <Brand>CSA</Brand>

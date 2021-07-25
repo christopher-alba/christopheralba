@@ -8,6 +8,12 @@ import {
   DownArrowWrapper,
 } from "./styled";
 const Landing = () => {
+  const handleClick = () => {
+    const AboutArea = document.getElementsByClassName("about")[0];
+    AboutArea.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <DivOuter>
       <DivInner>
@@ -19,7 +25,7 @@ const Landing = () => {
           </SubHeading>
           <SubHeading>ASPIRING WEB DEVELOPER</SubHeading>
         </TextWrapper>
-        <DownArrowWrapper>
+        <DownArrowWrapper onClick={handleClick}>
           <i className="fas fa-chevron-down"></i>
         </DownArrowWrapper>
       </DivInner>

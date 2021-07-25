@@ -8,10 +8,8 @@ export const DivOuter = styled("div")`
   position: fixed;
   top: 0px;
   padding: 20px;
-  background: transparent;
-  @media (max-width: 500px) {
-    background: ${({ theme }) => theme.colors.primary};
-  }
+  background: ${({ theme }) => theme.colors.primary};
+  z-index: 10000;
 `;
 
 export const DivInner = styled("div")`
