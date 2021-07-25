@@ -9,6 +9,9 @@ export const DivOuter = styled("div")`
   top: 0px;
   padding: 20px;
   background: transparent;
+  @media (max-width: 500px) {
+    background: ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 export const DivInner = styled("div")`
