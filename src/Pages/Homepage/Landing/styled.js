@@ -36,6 +36,10 @@ export const Name = styled("h1")`
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 900px) {
+    font-size: 2rem;
+  } ;
 `;
 
 export const SubHeading = styled("h1")`
@@ -44,6 +48,9 @@ export const SubHeading = styled("h1")`
   font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.secondary};
   text-align: center;
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  } ;
 `;
 
 export const DownArrowWrapper = styled("div")`
@@ -63,4 +70,9 @@ export const DownArrowWrapper = styled("div")`
     background: ${({ theme }) => theme.colors.tertiary};
     color: ${({ theme }) => theme.colors.primary};
   }
+  @media (max-width: 900px) {
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+  } ;
 `;

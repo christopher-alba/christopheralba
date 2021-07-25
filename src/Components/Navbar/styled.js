@@ -71,6 +71,11 @@ export const NavbarThemeBox = styled("div")`
     position: relative;
     left: -10px;
   }
+  @media (max-width: 900px) {
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } ;
 `;
 
 export const NavMenuToggle = styled("button")`
@@ -83,4 +88,9 @@ export const NavMenuToggle = styled("button")`
     background: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.primary};
   }
+`;
+
+export const NavMenu = styled("div")`
+  display: flex;
+  flex-direction: column;
 `;
