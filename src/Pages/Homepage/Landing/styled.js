@@ -5,6 +5,7 @@ export const DivOuter = styled("div")`
   height: 100vh;
   background: url(${landing});
   background-position: center;
+  background-attachment: fixed;
 `;
 
 export const DivInner = styled("div")`
