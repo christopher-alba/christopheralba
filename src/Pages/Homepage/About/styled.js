@@ -1,22 +1,24 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as mySVG } from "../../../images/sky.svg";
-export const TreeIcon = styled(mySVG)`
-  width: 40rem;
+export const Skyline = styled(mySVG)`
+  width: 109rem;
+  height: auto;
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
   left: 250px;
   color: ${({ theme }) => theme.colors.tertiary};
   @media (max-width: 1500px) {
-    width: 25rem;
-    height: 25rem;
+    width: 60rem;
+    height: auto;
     left: 100px;
+    bottom: -10px;
   }
   @media (max-width: 700px) {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: auto;
     left: 30px;
-    bottom: -15px;
+    bottom: -5px;
   }
 `;
 
@@ -33,7 +35,7 @@ export const KiwiIcon1 = styled("i")`
     bottom: -30px;
   }
   @media (max-width: 700px) {
-    font-size: 5rem;
+    font-size: 2.5rem;
     left: 100px;
     bottom: -30px;
   }
@@ -51,7 +53,7 @@ export const KiwiIcon2 = styled("i")`
     bottom: -30px;
   }
   @media (max-width: 700px) {
-    font-size: 5rem;
+    font-size: 2.5rem;
     left: 150px;
     bottom: -30px;
   }
@@ -62,11 +64,12 @@ export const AboutContainer = styled("div")`
   height: 100%;
   width: 60%;
   margin-left: auto;
-  padding: 50px;
+  padding: 150px;
   padding-top: 0px;
   text-align: center;
   @media (max-width: 1500px) {
     width: 100%;
+    padding:50px;
   }
 `;
 

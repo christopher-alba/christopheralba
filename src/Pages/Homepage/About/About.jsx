@@ -1,7 +1,7 @@
 import React from "react";
 import { JCUXTitle } from "../../../Components/JCUX/JCUXTitle";
 import {
-  TreeIcon,
+  Skyline,
   AboutContainer,
   KiwiIcon1,
   KiwiIcon2,
@@ -20,7 +20,7 @@ const About = () => {
       <TitleWrapperDiv>
         <JCUXTitle>ABOUT</JCUXTitle>
       </TitleWrapperDiv>
-      <TreeIcon></TreeIcon>
+      <Skyline></Skyline>
       <KiwiIcon1 className="fas fa-kiwi-bird"></KiwiIcon1>
       <KiwiIcon2 className="fas fa-kiwi-bird"></KiwiIcon2>
       <AboutContainer>
