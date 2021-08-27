@@ -20,7 +20,7 @@ const About = () => {
       <TitleWrapperDiv>
         <JCUXTitle>ABOUT</JCUXTitle>
       </TitleWrapperDiv>
-      <TreeIcon className="fas fa-tree"></TreeIcon>
+      <TreeIcon></TreeIcon>
       <KiwiIcon1 className="fas fa-kiwi-bird"></KiwiIcon1>
       <KiwiIcon2 className="fas fa-kiwi-bird"></KiwiIcon2>
       <AboutContainer>

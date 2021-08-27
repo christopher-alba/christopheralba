@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
-export const TreeIcon = styled("i")`
-  font-size: 50rem;
+import { ReactComponent as mySVG } from "../../../images/sky.svg";
+export const TreeIcon = styled(mySVG)`
+  width: 40rem;
   position: absolute;
   bottom: -25px;
   left: 250px;
   color: ${({ theme }) => theme.colors.tertiary};
   @media (max-width: 1500px) {
-    font-size: 25rem;
+    width: 25rem;
+    height: 25rem;
     left: 100px;
   }
   @media (max-width: 700px) {
-    font-size: 15rem;
+    width: 15rem;
+    height: 15rem;
     left: 30px;
     bottom: -15px;
   }
