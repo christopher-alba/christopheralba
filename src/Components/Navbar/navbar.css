@@ -2,5 +2,5 @@
 .ui.toggle.checkbox input:checked ~ label:before,
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
 .ui.toggle.checkbox input:focus:checked ~ label:before {
-  background-color: #00cc5f !important;
+  background-color: #009acb !important;
 }

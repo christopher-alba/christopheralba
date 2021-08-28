@@ -7,7 +7,8 @@ export const DivOuter = styled("div")`
   height: fit-content;
   position: fixed;
   top: 0px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: ${({ theme }) => theme.colors.primary};
   z-index: 10000;
 `;

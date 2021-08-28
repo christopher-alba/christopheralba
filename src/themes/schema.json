@@ -9,7 +9,7 @@
         "overlay": "rgba(255,255,255,0.6)",
         "secondary": "#303030",
         "secondaryHover": "#575757",
-        "tertiary": "#00a34c"
+        "tertiary": "#009acb"
       }
     },
     "dark": {
@@ -21,7 +21,7 @@
         "overlay": "rgba(0,0,0,0.6)",
         "secondary": "white",
         "secondaryHover": "#cfcfcf",
-        "tertiary": "#00cb5f"
+        "tertiary": "#009acb"
       }
     }
   }
