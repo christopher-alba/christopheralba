@@ -7,7 +7,7 @@
         "primaryHover": "#cfcfcf",
         "dropShadow": "rgba(0,0,0,0.3)",
         "overlay": "rgba(255,255,255,0.6)",
-        "secondary": "#303030",
+        "secondary": "#1C1C1C",
         "secondaryHover": "#575757",
         "tertiary": "#009acb"
       }
@@ -15,7 +15,7 @@
     "dark": {
       "name": "dark",
       "colors": {
-        "primary": "#303030",
+        "primary": "#1C1C1C",
         "primaryHover": "#575757",
         "dropShadow": "rgba(0,0,0,0.3)",
         "overlay": "rgba(0,0,0,0.6)",

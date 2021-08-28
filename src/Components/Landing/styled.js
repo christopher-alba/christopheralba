@@ -1,11 +1,7 @@
 import styled from "styled-components";
-import landing from "../../../images/landing.png";
 export const DivOuter = styled("div")`
   width: 100%;
   height: 100vh;
-  background: url(${landing});
-  background-position: center;
-  background-attachment: fixed;
 `;
 
 export const DivInner = styled("div")`

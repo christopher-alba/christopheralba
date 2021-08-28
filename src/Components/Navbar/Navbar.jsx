@@ -49,10 +49,10 @@ const Navbar = ({ setSelectedTheme, themes, selectedTheme }) => {
                 <NavbarIcon name="moon" />
               </NavbarThemeBox>
 
-              <NavLink>HOMEPAGE</NavLink>
-              <NavLink>EXPERIENCE</NavLink>
-              <NavLink>PROJECTS</NavLink>
-              <NavLink>CONTACT</NavLink>
+              <NavLink to="/">HOMEPAGE</NavLink>
+              <NavLink to="/experience">EXPERIENCE</NavLink>
+              <NavLink to="/projects">PROJECTS</NavLink>
+              <NavLink to="/contact">CONTACT</NavLink>
             </DivRight>
           </DivInner>
         </JCUXContainer>
@@ -82,10 +82,10 @@ const Navbar = ({ setSelectedTheme, themes, selectedTheme }) => {
                 <NavbarIcon name="moon" />
               </NavbarThemeBox>
 
-              <NavLink>HOMEPAGE</NavLink>
-              <NavLink>EXPERIENCE</NavLink>
-              <NavLink>PROJECTS</NavLink>
-              <NavLink>CONTACT</NavLink>
+              <NavLink to="/">HOMEPAGE</NavLink>
+              <NavLink to="/experience">EXPERIENCE</NavLink>
+              <NavLink to="/projects">PROJECTS</NavLink>
+              <NavLink to="/contact">CONTACT</NavLink>
             </NavMenu>
           </JCUXContainer>
         )}

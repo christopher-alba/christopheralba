@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   DivOuter,
   DivInner,
@@ -7,18 +7,29 @@ import {
   SubHeading,
   DownArrowWrapper,
 } from "./styled";
-const Landing = () => {
+
+const Landing = ({ page, scrollTo, image }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleClick = () => {
-    const AboutArea = document.getElementsByClassName("about")[0];
-    AboutArea.scrollIntoView({
+    const scrollToArea = document.getElementsByClassName(scrollTo)[0];
+    scrollToArea.scrollIntoView({
       behavior: "smooth",
     });
   };
   return (
-    <DivOuter>
+    <DivOuter
+      style={{
+        background: `url(${image})`,
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <DivInner>
         <TextWrapper>
-          <SubHeading>HOMEPAGE</SubHeading>
+          <SubHeading>{page}</SubHeading>
           <Name>CHRISTOPHER SY ALBA</Name>
           <SubHeading>
             PENULTIMATE COMPUTER SYSTEMS ENGINEERING STUDENT
