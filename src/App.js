@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Pages/Homepage";
 import Experience from "./Pages/Experience";
+import Portfolio from "./Pages/Portfolio";
 
 AOS.init();
 
@@ -24,6 +25,7 @@ const App = () => {
       />
       <Route exact path="/" component={Homepage} />
       <Route exact path="/experience" component={Experience} />
+      <Route exact path="/projects" component={Portfolio} />
     </ThemeProvider>
   );
 };
