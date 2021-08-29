@@ -34,8 +34,10 @@ const About = () => {
             development.
           </p>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <StyledButton>CV/RESUME</StyledButton>
-            <StyledLink>PERSONAL PROJECTS</StyledLink>
+            <a target="_blank" rel="noreferrer" href="./cv.pdf">
+              <StyledButton>CV/RESUME</StyledButton>
+            </a>
+            <StyledLink to="/projects">PERSONAL PROJECTS</StyledLink>
           </div>
         </AboutTextDiv>
       </AboutContainer>

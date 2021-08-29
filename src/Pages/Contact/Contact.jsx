@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { JCUXTitle } from "../../Components/JCUX/JCUXTitle";
 import { JCUXAnchor } from "../../Components/JCUX/JCUXAnchor";
 import {
@@ -11,6 +11,9 @@ import {
 } from "./styled";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <OuterWrapper
       style={{

@@ -47,7 +47,7 @@ const WebDeveloper = () => {
             .
           </p>
           <div style={{display:"flex"}}>
-            <StyledLink>MY EXPERIENCE</StyledLink>
+            <StyledLink to="/experience">MY EXPERIENCE</StyledLink>
           </div>
         </TextWrapper>
       </Container>
