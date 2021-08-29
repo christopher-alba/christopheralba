@@ -11,7 +11,7 @@ import {
   TagWrapper,
 } from "./styled";
 import projects from "./projects";
-import { StyledLink } from "../Homepage/About/styled";
+import { JCUXAnchor } from "../../Components/JCUX/JCUXAnchor";
 
 const Portfolio = () => {
   return (
@@ -26,7 +26,14 @@ const Portfolio = () => {
                 <ProjectWrapper>
                   <ProjectImage src={project.imgUrl} alt="" />
                   <div style={{ display: "flex", textAlign: "center" }}>
-                    <StyledLink to={project.href}>VISIT</StyledLink>
+                    <JCUXAnchor
+                      style={{ width: "100%" }}
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      VISIT
+                    </JCUXAnchor>
                   </div>
 
                   <h1>{project.title}</h1>
