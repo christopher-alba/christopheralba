@@ -75,7 +75,7 @@ const technologies = [
       learnedFrom: ["The University of Auckland"],
     },
     {
-      name: "Micro controllers",
+      name: "μCs",
       proficiency: 75,
       learnedFrom: ["The University of Auckland"],
     },

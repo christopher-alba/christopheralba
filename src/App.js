@@ -1,25 +1,34 @@
-import "./App.css";
 import { Route } from "react-router-dom";
-import React, { Fragment } from "react";
-import Homepage from "./Pages/Homepage";
-import Portfolio from "./Pages/Portfolio";
-import NavbarMain from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import React, { useState } from "react";
+import "semantic-ui-css/semantic.min.css";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./themes/globalStyles";
+import themes from "./themes/schema.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Homepage from "./Pages/Homepage";
+import Experience from "./Pages/Experience";
+import Portfolio from "./Pages/Portfolio";
+import Contact from "./Pages/Contact";
 
 AOS.init();
+
 const App = () => {
+  const [selectedTheme, setSelectedTheme] = useState(themes.data.dark);
   return (
-    <Fragment>
-      <Route
-        path="/"
-        render={(props) => <NavbarMain pathName={props.location.pathname} />}
+    <ThemeProvider theme={selectedTheme}>
+      <GlobalStyles />
+      <Navbar
+        setSelectedTheme={setSelectedTheme}
+        selectedTheme={selectedTheme}
+        themes={themes}
       />
       <Route exact path="/" component={Homepage} />
+      <Route exact path="/experience" component={Experience} />
       <Route exact path="/projects" component={Portfolio} />
-      <Footer />
-    </Fragment>
+      <Route exact path="/contact" component={Contact} />
+    </ThemeProvider>
   );
 };
 

@@ -1,76 +1,97 @@
-import React, { useState, useEffect, Fragment } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
+import React, { useState } from "react";
+import {
+  DivOuter,
+  Brand,
+  DivInner,
+  NavLink,
+  DivRight,
+  NavbarIcon,
+  NavbarRadio,
+  NavbarThemeBox,
+  NavMenuToggle,
+  NavMenu,
+} from "./styled";
+import { JCUXContainer } from "../JCUX/JCUXContainer";
 import "./navbar.css";
+import useWindowWidth from "../../Hooks/useWindowWidth";
 
-const NavbarMain = (props) => {
-  const [location, setLocation] = useState(props.pathName);
-  
-  const [scrollState, setScrollState] = useState("top");
-  useEffect(() => {
-    let listener = null;
-    setLocation(props.pathName);
-    let navbar = document.getElementsByClassName("navbar-main")[0];
-    listener = document.addEventListener("scroll", (e) => {
-      var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 50) {
-        if (scrollState !== "amir") {
-          setScrollState("amir");
-          navbar.classList.add("whiteBackground");
-        }
-      } else {
-        if (scrollState !== "top") {
-          setScrollState("top");
-          navbar.classList.remove("whiteBackground");
-        }
-      }
-    });
-    return () => {
-      document.removeEventListener("scroll", listener);
-    };
-  }, [props.pathName, scrollState]);
+const Navbar = ({ setSelectedTheme, themes, selectedTheme }) => {
+  const [dropdown, setDropdown] = useState(false);
 
-  return (
-    <Fragment>
-      <Navbar className="navbar-main" bg="light" expand="lg" variant="light">
-        <Container>
-          <Navbar.Brand href="#/">My Portfolio</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-              <Nav.Link
-                className={`${location === "/" ? "active" : ""} nav-link-home`}
-                href="#/"
-              >
-                Home
-              </Nav.Link>
-              <Nav.Link
-                className={`${
-                  location === "/projects" ? "active" : ""
-                } nav-link-projects`}
-                href="#/projects"
-              >
-                Projects
-              </Nav.Link>
-              <Nav.Item>
-                <div
-                  onClick={() => {
-                    document
-                      .getElementsByClassName("footer-div")[0]
-                      .scrollIntoView({ behavior: "smooth" });
-                  }}
-                  className="nav-contact"
-                >
-                  Contact
-                </div>
-              </Nav.Item>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </Fragment>
-  );
+  const handleRadioChange = (evt, target) => {
+    if (target.checked) {
+      setSelectedTheme(themes.data.dark);
+    } else {
+      setSelectedTheme(themes.data.light);
+    }
+  };
+
+  const toggleDropdown = () => {
+    setDropdown(!dropdown);
+  };
+
+  const windowWidth = useWindowWidth();
+
+  if (windowWidth > 900) {
+    return (
+      <DivOuter className="navbar-main">
+        <JCUXContainer>
+          <DivInner>
+            <Brand>CSA</Brand>
+            <DivRight>
+              <NavbarThemeBox>
+                <NavbarIcon name="sun" />
+                <NavbarRadio
+                  checked={selectedTheme.name === "dark"}
+                  toggle
+                  onChange={handleRadioChange}
+                />
+                <NavbarIcon name="moon" />
+              </NavbarThemeBox>
+
+              <NavLink to="/">HOMEPAGE</NavLink>
+              <NavLink to="/experience">EXPERIENCE</NavLink>
+              <NavLink to="/projects">PROJECTS</NavLink>
+              <NavLink to="/contact">CONTACT</NavLink>
+            </DivRight>
+          </DivInner>
+        </JCUXContainer>
+      </DivOuter>
+    );
+  } else {
+    return (
+      <DivOuter className="navbar-main">
+        <JCUXContainer>
+          <DivInner>
+            <Brand>CSA</Brand>
+            <NavMenuToggle onClick={toggleDropdown}>
+              <i className="fas fa-bars"></i>
+            </NavMenuToggle>
+          </DivInner>
+        </JCUXContainer>
+        {dropdown && (
+          <JCUXContainer>
+            <NavMenu>
+              <NavbarThemeBox>
+                <NavbarIcon name="sun" />
+                <NavbarRadio
+                  checked={selectedTheme.name === "dark"}
+                  toggle
+                  onChange={handleRadioChange}
+                />
+                <NavbarIcon name="moon" />
+              </NavbarThemeBox>
+
+              <NavLink to="/">HOMEPAGE</NavLink>
+              <NavLink to="/experience">EXPERIENCE</NavLink>
+              <NavLink to="/projects">PROJECTS</NavLink>
+              <NavLink to="/contact">CONTACT</NavLink>
+            </NavMenu>
+          </JCUXContainer>
+        )}
+      </DivOuter>
+    );
+  }
 };
 
-export default NavbarMain;
+export default Navbar;

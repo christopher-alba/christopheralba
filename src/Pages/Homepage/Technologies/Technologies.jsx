@@ -1,67 +1,57 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import "./technologies.css";
-import technologiesData from "./technologiesData";
-import { Spring } from "react-spring/renderprops";
-import VisibilitySensor from "react-visibility-sensor";
+import {
+  MainWrapper,
+  InnerWrapper,
+  Icon,
+  TitleWrapper,
+  StackWrapper,
+  TechBarMain,
+  TechBarTitle,
+  TechBarProficiencyWrapper,
+  TechBarProficiency,
+} from "./styled";
+import technologies from "./technologiesData";
+import { JCUXContainer } from "../../../Components/JCUX/JCUXContainer";
+import { JCUXTitle } from "../../../Components/JCUX/JCUXTitle";
 
 const Technologies = () => {
   return (
-    <div className="technologies-div">
-      <div className="technologies-text-div">
-        <Container className="technologies-container">
-          <h1 data-aos="fade-in" className="technologies-header">
-            MY TECHNOLOGIES
-          </h1>
-          <div className="technologies-list">
-            {technologiesData.map((technology) => {
+    <MainWrapper style={{ height: "fit-content", position: "relative" }}>
+      <JCUXContainer>
+        <InnerWrapper>
+          <TitleWrapper>
+            <Icon className="fas fa-code" />
+            <JCUXTitle>MY TECHNOLOGY STACK</JCUXTitle>
+          </TitleWrapper>
+          <StackWrapper>
+            {technologies.map((technology) => {
               return (
-                <VisibilitySensor>
-                  {({ isVisible }) => (
-                    <Spring
-                      from={{ number: 0 }}
-                      to={{ number: isVisible ? technology.proficiency : 0 }}
-                      config={{
-                        duration: 500 * (technology.proficiency / 100),
+                <TechBarMain>
+                  <TechBarTitle>
+                    <p>{technology.name}</p>
+                  </TechBarTitle>
+                  <TechBarProficiencyWrapper>
+                    <p
+                      style={{
+                        marginRight: "30px",
+                        position: "relative",
+                        zIndex: 10,
+                        marginBottom: "0px",
                       }}
                     >
-                      {(props) => (
-                        <div
-                          className="technologies-technology-div"
-                          data-aos="fade-in"
-                        >
-                          <div className="technologies-technology-div-inner">
-                            <div className="technologies-technology-name">
-                              <h2 className="technologies-name">{technology.name}</h2>
-                            </div>
-                            <div style={{ width: "100%" }}>
-                              <div className="technologies-proficiency-bar">
-                                <p className="technologies-proficiency-text">
-                                  {Math.round(props.number)}%
-                                </p>
-                                <div
-                                  className="technologies-proficiency-bar-inner"
-                                  style={{ width: `${props.number}%`, background: `rgb(23, 162, 184,${props.number/100})` }}
-                                ></div>
-                              </div>
-                              {technology.learnedFrom.map((source) => (
-                                <strong className="technologies-source">
-                                  #{source}
-                                </strong>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      )}
-                    </Spring>
-                  )}
-                </VisibilitySensor>
+                      {technology.proficiency}% Proficient
+                    </p>
+                    <TechBarProficiency
+                      style={{ width: `${technology.proficiency}%` }}
+                    />
+                  </TechBarProficiencyWrapper>
+                </TechBarMain>
               );
             })}
-          </div>
-        </Container>
-      </div>
-    </div>
+          </StackWrapper>
+        </InnerWrapper>
+      </JCUXContainer>
+    </MainWrapper>
   );
 };
 

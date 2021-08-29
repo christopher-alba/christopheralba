@@ -1,25 +1,17 @@
-import React, { Fragment, useEffect } from "react";
+import React from "react";
 import About from "./About";
-import Engineering from "./Engineering";
-import WebDeveloper from "./WebDeveloper";
-import WorkExperience from "./WorkExperience";
+import Landing from "../../Components/Landing";
 import Technologies from "./Technologies";
-import LandingBasic from "./LandingBasic";
+import WebDeveloper from "./WebDeveloper";
 
 const Homepage = () => {
-  useEffect(() => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  });
   return (
-    <Fragment>
-      <LandingBasic/>
+    <>
+      <Landing scrollTo="about" page="HOMEPAGE" image="./homepage.png"/>
       <About />
       <WebDeveloper />
-      <Engineering />
-      <WorkExperience />
       <Technologies />
-    </Fragment>
+    </>
   );
 };
 
