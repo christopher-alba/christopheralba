@@ -24,10 +24,38 @@ const App = () => {
         selectedTheme={selectedTheme}
         themes={themes}
       />
-      <Route exact path="/" component={Homepage} />
-      <Route exact path="/experience" component={Experience} />
-      <Route exact path="/projects" component={Portfolio} />
-      <Route exact path="/contact" component={Contact} />
+      <Route
+        exact
+        path="/"
+        component={() => (
+          <div data-aos="fade-in">
+            <Homepage />
+          </div>
+        )}
+      />
+      <Route
+        exact
+        path="/experience"
+        component={() => (
+          <div data-aos="fade-in">
+            <Experience />
+          </div>
+        )}
+      />
+      <Route
+        exact
+        path="/projects"
+        component={() => (
+          <div data-aos="fade-in">
+            <Portfolio />
+          </div>
+        )}
+      />
+      <Route exact path="/contact" component={() => (
+          <div data-aos="fade-in">
+            <Contact />
+          </div>
+        )} />
     </ThemeProvider>
   );
 };
