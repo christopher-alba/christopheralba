@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   DivOuter,
   Brand,
@@ -14,9 +14,11 @@ import {
 import { JCUXContainer } from "../JCUX/JCUXContainer";
 import "./navbar.css";
 import useWindowWidth from "../../Hooks/useWindowWidth";
+import { useLocation } from "react-router-dom";
 
 const Navbar = ({ setSelectedTheme, themes, selectedTheme }) => {
   const [dropdown, setDropdown] = useState(false);
+  const location = useLocation();
 
   const handleRadioChange = (evt, target) => {
     if (target.checked) {
@@ -49,10 +51,10 @@ const Navbar = ({ setSelectedTheme, themes, selectedTheme }) => {
                 <NavbarIcon name="moon" />
               </NavbarThemeBox>
 
-              <NavLink to="/">HOMEPAGE</NavLink>
-              <NavLink to="/experience">EXPERIENCE</NavLink>
-              <NavLink to="/projects">PROJECTS</NavLink>
-              <NavLink to="/contact">CONTACT</NavLink>
+              <NavLink to="/" inPage={location.pathname === "/"}>HOMEPAGE</NavLink>
+              <NavLink to="/experience" inPage={location.pathname === "/experience"}>EXPERIENCE</NavLink>
+              <NavLink to="/projects" inPage={location.pathname === "/projects"}>PROJECTS</NavLink>
+              <NavLink to="/contact" inPage={location.pathname === "/contact"}>CONTACT</NavLink>
             </DivRight>
           </DivInner>
         </JCUXContainer>
@@ -82,10 +84,10 @@ const Navbar = ({ setSelectedTheme, themes, selectedTheme }) => {
                 <NavbarIcon name="moon" />
               </NavbarThemeBox>
 
-              <NavLink to="/">HOMEPAGE</NavLink>
-              <NavLink to="/experience">EXPERIENCE</NavLink>
-              <NavLink to="/projects">PROJECTS</NavLink>
-              <NavLink to="/contact">CONTACT</NavLink>
+              <NavLink to="/" inPage={location.pathname === "/"}>HOMEPAGE</NavLink>
+              <NavLink to="/experience" inPage={location.pathname === "/experience"}>EXPERIENCE</NavLink>
+              <NavLink to="/projects" inPage={location.pathname === "/projects"}>PROJECTS</NavLink>
+              <NavLink to="/contact" inPage={location.pathname === "/contact"}>CONTACT</NavLink>
             </NavMenu>
           </JCUXContainer>
         )}

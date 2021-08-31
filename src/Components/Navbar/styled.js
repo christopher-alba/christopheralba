@@ -19,7 +19,12 @@ export const DivInner = styled("div")`
 `;
 
 export const NavLink = styled(Link)`
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme, inPage }) => {
+    if (inPage) {
+      return theme.colors.tertiary;
+    }
+    return theme.colors.secondary;
+  }};
   &:hover {
     color: ${({ theme }) => theme.colors.tertiary};
   }
