@@ -7,9 +7,10 @@ const WebDeveloper = () => {
     <MainWrapper>
       <Container>
         <LogosWrapper>
-          <Logos src="./jasper.png" alt="" />
           <Logos src="./udemy.jpg" alt="" />
           <Logos src="./eda.png" alt="" />
+          <Logos src="./jasper.png" alt="" />
+          <Logos src="./hso.jpg" alt="" />
         </LogosWrapper>
         <TextWrapper>
           <h1>An aspiring web developer!</h1>
@@ -44,9 +45,18 @@ const WebDeveloper = () => {
                 Jasper
               </Links>
             </strong>
-            .
+            . Then I worked as a developer intern for{" "}
+            <strong>
+              <Links
+                target="_blank"
+                rel="noreferrer"
+                href="https://henryscheinone.co.nz/"
+              >
+                Henry Schein One
+              </Links>
+            </strong>
           </p>
-          <div style={{display:"flex"}}>
+          <div style={{ display: "flex" }}>
             <StyledLink to="/experience">MY EXPERIENCE</StyledLink>
           </div>
         </TextWrapper>
