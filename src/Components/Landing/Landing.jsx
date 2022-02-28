@@ -32,7 +32,7 @@ const Landing = ({ page, scrollTo, image }) => {
           <SubHeading>{page}</SubHeading>
           <Name>CHRISTOPHER SY ALBA</Name>
           <SubHeading>
-            PENULTIMATE COMPUTER SYSTEMS ENGINEERING STUDENT
+            FINAL YEAR COMPUTER SYSTEMS ENGINEERING STUDENT
           </SubHeading>
           <SubHeading>ASPIRING WEB DEVELOPER</SubHeading>
         </TextWrapper>
