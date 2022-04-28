@@ -28,13 +28,13 @@ const About = () => {
         <h1>Who am I?</h1>
         <AboutTextDiv>
           <p style={{ fontSize: "1.5rem", zIndex: 2, position: "relative" }}>
-            I'm a penultimate computer systems engineering student at the
+            I'm a final year computer systems engineering student at the
             <strong> University of Auckland</strong>. I have a serious passion
             for coding and web development, with a preference towards front-end
             development.
           </p>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <a target="_blank" rel="noreferrer" href="./cv.pdf">
+            <a target="_blank" rel="noreferrer" href="./cv_2022.pdf">
               <StyledButton>CV/RESUME</StyledButton>
             </a>
             <StyledLink to="/projects">PERSONAL PROJECTS</StyledLink>
